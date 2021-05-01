@@ -32,14 +32,6 @@ const ScheduleScreen = ({navigation}) => {
       db.on('value', handleData, error => alert(error));
       return () => { db.off('value', handleData); };
     }, []);
-    //     const fetchSchedule =  async () => {
-    //     const response = await fetch(url);
-    //     if (!response.ok) throw response;
-    //     const json = await response.json();
-    //     setSchedule(json);
-    //     }
-    //     fetchSchedule();
-    // }, []);
 
     return (
         <SafeAreaView style={styles.container}>
